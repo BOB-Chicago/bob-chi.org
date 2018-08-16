@@ -22,6 +22,40 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <style media="screen" type="text/css">
+
+        .display-js {
+          display: none;
+        }
+
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev{
+            display:block;
+        }
+
+        .carousel-item > div > div{
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1rem;
+        }
+
+        .carousel-control-prev-icon {
+            width: 1rem;
+            height: 1rem;
+            background-color: black;
+            border-radius: 50%;
+            left: 0;
+        }
+
+        .carousel-control-next-icon {
+            width: 1rem;
+            height: 1rem;
+            background-color: black;
+            border-radius: 50%;
+            right: 0;
+        }
+    </style>
 
   </head>
 
@@ -42,6 +76,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#code-of-conduct">Conduct</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sponsorship">Sponsorship</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
@@ -65,18 +105,35 @@
       </div>
     </header>
 
-    <!-- Services -->
-    <section id="events">
+
+    <!-- Meetup section that will only display with disabled JS -->
+    <noscript>
+      <section id="events">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Events</h2>
+            <h2 class="section-heading text-uppercase">No Js</h2>
             <h3 class="section-subheading text-muted">Look out for these upcoming events!</h3>
 						<a class="btn btn-primary btn-xl text-uppercase" href="https://www.meetup.com/Bitcoin-Open-Blockchain-Community-Chicago/">Events on meetup.com</a>
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </noscript>
+
+
+    <!-- Meetup section that will only display with enabled JS -->
+    <section id="events" class="display-js">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">with Js</h2>
+            <h3 class="section-subheading text-muted">Look out for these upcoming events!</h3>
+						<a class="btn btn-primary btn-xl text-uppercase" href="https://www.meetup.com/Bitcoin-Open-Blockchain-Community-Chicago/">Events on meetup.com</a>
+          </div>
+        </div>
+      </div>
+      </section>
 
 		<!-- About -->
     <section class="bg-light" id="about">
@@ -94,8 +151,8 @@
               <i class="fa fa-bullhorn fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Talks</h4>
-						<p class="text-muted">We invite someone of note from the crypto 
-						community to speak to all of our members about a topic of general 
+						<p class="text-muted">We invite someone of note from the crypto
+						community to speak to all of our members about a topic of general
 						interest.</p>
           </div>
           <div class="col-md-4">
@@ -104,8 +161,8 @@
               <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Workshops</h4>
-						<p class="text-muted">Join us for a technical case study to get 
-						exposure and better understand exciting internet of money 
+						<p class="text-muted">Join us for a technical case study to get
+						exposure and better understand exciting internet of money
 						technologies.</p>
           </div>
           <div class="col-md-4">
@@ -114,11 +171,146 @@
               <i class="fa fa-beer fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Socials</h4>
-						<p class="text-muted">Gather with other cryptocurrency enthusiasts 
+						<p class="text-muted">Gather with other cryptocurrency enthusiasts
 						for beer and pizza at Sully's.</p>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Code of Conduct -->
+    <section id="code-of-conduct">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Code of Conduct</h2>
+            <p>BOB organizers reserve the right to expel anyone who is being an asshole. We do
+not tolerate threats of violence, bullying, harassment, etc. As a side effect
+BOB events should feel welcoming and inclusive to everybody.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsorship -->
+    <section class="bg-light" id="sponsorship">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">
+                    Sponsorship
+                </h2>
+                    <p>
+                    BOB is a community group funded by community donations and sponsorship of
+                    events. In order to protect BOB's integrity as a community group, BOB
+                    organizers are highly selective when it comes to sponsors and the terms of
+                    sponsorship. We work with sponsors whose primary goal is to support the
+                    community and our events. Sponsorship funds are always used for the benefit of
+                    BOB, to cover event and meetup related costs. BOB maintains a separation
+                    between sponsors and BOB content. Sponsors do not speak at events, have no
+                    control over events or content and do not receive access to BOB member’s
+                    information or mailing lists.
+                    </p>
+              </div>
+            <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active p-4">
+                        <div class="row">
+                        <div class="col-md-5">
+                          <h4 class="service-heading">
+                            Talk - Satoshi Sponsor Package ($600)
+                          </h4>
+                          <ul>
+                            <li>A table at the entrance of the event</li>
+                            <li>On-stage signage placement</li>
+                            <li>2 sponsorship shout outs during the event</li>
+                            <li>1 mention in meetup message to ~2,700 Chicago B.O.B. community members</li>
+                            <li>A retweet on social media by the official B.O.B. account at its organizers</li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-5">
+                          <h4 class="service-heading">
+                            Talk - Finny Sponsor Package ($300)
+                          </h4>
+                          <ul>
+                            <li>A table at the entrance of the event</li>
+                            <li>2 sponsorship shout outs during the event</li>
+                            <li>1 mention in meetup message to ~2,700 Chicago B.O.B. community members</li>
+                            <li>A retweet on social media by the official B.O.B. account at its organizers</li>
+                          </ul>
+                        </div>
+                        </div>
+                      </div>
+
+                    <div class="carousel-item p-4">
+                        <div class="row">
+                            <div class="col-md-5">
+                              <h4 class="service-heading">
+                                Social - Satoshi Sponsor Package ($300)
+                              </h4>
+                              <ul>
+                                <li>A table at the entrance of the event</li>
+                                <li>1 sponsorship shout out during the event</li>
+                                <li>1 mention in meetup message to ~2,700 Chicago B.O.B. community members</li>
+                                <li>A retweet on social media by the official B.O.B. account at its organizers</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-5">
+                              <h4 class="service-heading">
+                                Social - Finny Sponsor Package ($200)
+                              </h4>
+                              <ul>
+                                <li>A table at the entrance of the event</li>
+                                <li>1 sponsorship shout out during the event</li>
+                                <li>1 mention in meetup message to ~2,700 Chicago B.O.B. community members</li>
+                              </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item p-4">
+                        <div class="row">
+                            <div class="col-md-5">
+                              <h4 class="service-heading">
+                                Dev Series - Satoshi Sponsor Package ($200)
+                              </h4>
+                              <ul>
+                                <li>Signage placement</li>
+                                <li>1 sponsorship shout out during the event</li>
+                                <li>1 mention in meetup message to ~2,700 Chicago B.O.B. community members</li>
+                                <li>A retweet on social media by the official B.O.B. account at its organizers</li>
+                              </ul>
+                            </div>
+
+                            <div class="col-md-5">
+                              <h4 class="service-heading">
+                                Dev Series - Finny Sponsor Package ($100)
+                              </h4>
+                              <ul>
+                                <li>1 sponsorship shout outs during the event</li>
+                                <li>1 mention in meetup message to ~2,700 Chicago B.O.B. community members</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- Team -->
@@ -132,7 +324,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="img/team/20171230_164616_0.jpg" alt="">
               <h4>Hannah Rosenberg</h4>
 							<p class="text-muted">Lead Organizer</p>
             </div>
@@ -162,15 +354,15 @@
 
 		<section>
 		</section>
-    
+
 		<!-- Footer -->
     <footer>
       <div class="container text-muted">
 					<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-						<img alt="Creative Commons License" 
-							style="border-width:0" 
+						<img alt="Creative Commons License"
+							style="border-width:0"
 							src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-					</a> 
+					</a>
 					<small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small>
 			</div>
 			<div class="container text-muted">
@@ -192,6 +384,29 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
+    <!-- 'display-js' container is shown by this jquery (which will never run if JS is disabled) -->
+    <script>
+        $(document).ready(function(){
+            // the line below will reveal the 'display-js' div on the page if JS is available
+            $('.display-js').show();
+
+            var events;
+
+            // this call is currently not working because of a CORS issue
+            $.ajax({
+              type: "GET",
+              url: 'http://api.meetup.com/Bitcoin-Open-Blockchain-Community-Chicago/events',
+              headers: {
+                 "Access-Control-Allow-Origin": "*"
+              },
+              success: function (data) {
+                events = data;
+              },
+              async: false
+            });
+
+        });
+    </script>
   </body>
 
 </html>
