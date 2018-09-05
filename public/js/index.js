@@ -9,12 +9,8 @@ $(document).ready(function(){
 			success: function (data) {
 				const container = $("#eventContainer");
 				data.forEach(ev => {
-					container.appendChild(ev.toString());
+				 	console.log(ev);	
 				});
-			},
-			headers: {
-				"Origin": "https://bob-chi.org"
-			},
-			async: false
+			}
 		});
 });

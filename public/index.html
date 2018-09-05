@@ -24,6 +24,11 @@
     <link href="css/agency.min.css" rel="stylesheet">
     <style media="screen" type="text/css">
 
+				footer {
+					background-color: grey;
+					color: white;
+				}
+
         .display-js {
           display: none;
         }
@@ -101,29 +106,13 @@
       </div>
     </header>
 
-
-    <!-- Meetup section that will only display with disabled JS -->
-    <noscript>
-      <section id="events">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3 class="section-subheading text-muted">Look out for these upcoming events!</h3>
-            <a class="btn btn-primary btn-xl text-uppercase" href="https://www.meetup.com/Bitcoin-Open-Blockchain-Community-Chicago/">Events on meetup.com</a>
-          </div>
-        </div>
-      </div>
-      </section>
-    </noscript>
-
-
     <!-- Meetup section that will only display with enabled JS -->
-    <section id="events" class="display-js">
+    <section id="events">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h3 class="section-subheading text-muted">Look out for these upcoming events!</h3>
-            <div id="eventContainer"></div>
+						<h2 class="section-heading text-uppercase">Events</h2>
+            <a class="btn btn-primary btn-xl text-uppercase" href="https://www.meetup.com/Bitcoin-Open-Blockchain-Community-Chicago/">on meetup.com</a>
           </div>
         </div>
       </div>
@@ -351,7 +340,7 @@ BOB events should feel welcoming and inclusive to everybody.</p>
 
     <!-- Footer -->
     <footer>
-      <div class="container text-muted">
+      <div class="container">
           <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
             <img alt="Creative Commons License"
               style="border-width:0"
@@ -359,7 +348,7 @@ BOB events should feel welcoming and inclusive to everybody.</p>
           </a>
           <small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small>
       </div>
-      <div class="container text-muted">
+      <div class="container">
         Forked from <a href="https://github.com/BlackrockDigital/startbootstrap-agency">BlackrockDigital/startbootstrap-agency</a>
       </div>
     </footer>
