@@ -30,30 +30,26 @@
 
         .carousel-item.active,
         .carousel-item-next,
-        .carousel-item-prev{
+        .carousel-item-prev {
             display:block;
         }
 
-        .carousel-item > div > div{
+        .carousel-item > div > div {
             margin-left: auto;
             margin-right: auto;
             padding: 1rem;
         }
 
         .carousel-control-prev-icon {
-            width: 1rem;
-            height: 1rem;
-            background-color: black;
-            border-radius: 50%;
-            left: 0;
+						background: 
+							url(img/fa-chevron-left.svg)
+							no-repeat;
         }
 
         .carousel-control-next-icon {
-            width: 1rem;
-            height: 1rem;
-            background-color: black;
-            border-radius: 50%;
-            right: 0;
+						background: 
+							url(img/fa-chevron-right.svg)
+							no-repeat;
         }
     </style>
 
@@ -86,9 +82,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
             </li>
-						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#donate">Donate</a>
-						</li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#donate">Donate</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -112,9 +108,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">No Js</h2>
             <h3 class="section-subheading text-muted">Look out for these upcoming events!</h3>
-						<a class="btn btn-primary btn-xl text-uppercase" href="https://www.meetup.com/Bitcoin-Open-Blockchain-Community-Chicago/">Events on meetup.com</a>
+            <a class="btn btn-primary btn-xl text-uppercase" href="https://www.meetup.com/Bitcoin-Open-Blockchain-Community-Chicago/">Events on meetup.com</a>
           </div>
         </div>
       </div>
@@ -127,15 +122,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">with Js</h2>
             <h3 class="section-subheading text-muted">Look out for these upcoming events!</h3>
-						<a class="btn btn-primary btn-xl text-uppercase" href="https://www.meetup.com/Bitcoin-Open-Blockchain-Community-Chicago/">Events on meetup.com</a>
+            <div id="eventContainer"></div>
           </div>
         </div>
       </div>
       </section>
 
-		<!-- About -->
+    <!-- About -->
     <section class="bg-light" id="about">
       <div class="container">
         <div class="row">
@@ -151,9 +145,9 @@
               <i class="fa fa-bullhorn fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Talks</h4>
-						<p class="text-muted">We invite someone of note from the crypto
-						community to speak to all of our members about a topic of general
-						interest.</p>
+            <p class="text-muted">We invite someone of note from the crypto
+            community to speak to all of our members about a topic of general
+            interest.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -161,9 +155,9 @@
               <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Workshops</h4>
-						<p class="text-muted">Join us for a technical case study to get
-						exposure and better understand exciting internet of money
-						technologies.</p>
+            <p class="text-muted">Join us for a technical case study to get
+            exposure and better understand exciting internet of money
+            technologies.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -171,8 +165,8 @@
               <i class="fa fa-beer fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Socials</h4>
-						<p class="text-muted">Gather with other cryptocurrency enthusiasts
-						for beer and pizza at Sully's.</p>
+            <p class="text-muted">Gather with other cryptocurrency enthusiasts
+            for beer and pizza at Sully's.</p>
           </div>
         </div>
       </div>
@@ -326,7 +320,7 @@ BOB events should feel welcoming and inclusive to everybody.</p>
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/20171230_164616_0.jpg" alt="">
               <h4>Hannah Rosenberg</h4>
-							<p class="text-muted">Lead Organizer</p>
+              <p class="text-muted">Lead Organizer</p>
             </div>
           </div>
           <div class="col-sm-4">
@@ -352,22 +346,22 @@ BOB events should feel welcoming and inclusive to everybody.</p>
       </div>
     </section>
 
-		<section>
-		</section>
+    <section>
+    </section>
 
-		<!-- Footer -->
+    <!-- Footer -->
     <footer>
       <div class="container text-muted">
-					<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-						<img alt="Creative Commons License"
-							style="border-width:0"
-							src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-					</a>
-					<small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small>
-			</div>
-			<div class="container text-muted">
-				Forked from <a href="https://github.com/BlackrockDigital/startbootstrap-agency">BlackrockDigital/startbootstrap-agency</a>
-			</div>
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License"
+              style="border-width:0"
+              src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+          </a>
+          <small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small>
+      </div>
+      <div class="container text-muted">
+        Forked from <a href="https://github.com/BlackrockDigital/startbootstrap-agency">BlackrockDigital/startbootstrap-agency</a>
+      </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
@@ -377,36 +371,11 @@ BOB events should feel welcoming and inclusive to everybody.</p>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
     <!-- 'display-js' container is shown by this jquery (which will never run if JS is disabled) -->
-    <script>
-        $(document).ready(function(){
-            // the line below will reveal the 'display-js' div on the page if JS is available
-            $('.display-js').show();
-
-            var events;
-
-            // this call is currently not working because of a CORS issue
-            $.ajax({
-              type: "GET",
-              url: 'http://api.meetup.com/Bitcoin-Open-Blockchain-Community-Chicago/events',
-              headers: {
-                 "Access-Control-Allow-Origin": "*"
-              },
-              success: function (data) {
-                events = data;
-              },
-              async: false
-            });
-
-        });
-    </script>
+    <script src="js/index.js"></script>
   </body>
 
 </html>
